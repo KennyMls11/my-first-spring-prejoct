@@ -1,7 +1,10 @@
 package org.ada.myfirstspringproject.repositorio;
 
-import org.ada.myfirstspringproject.dto.entity.Person;
-import org.springframework.data.repository.CrudRepository;
+import org.ada.myfirstspringproject.entity.Person;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface PersonRepository extends CrudRepository <Person,String> {
+//Tiene los metodos para gestionar//
+//Inversion de control//
+public interface PersonRepository extends JpaRepository<Person,String> {
+
 }
